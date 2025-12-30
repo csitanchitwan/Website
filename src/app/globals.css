@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+/* Font variables */
+/* :root {
+  font-family:
+    var(--font-tomato),
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+} */
+
+/* Base font for body */
+/* html,
+body {
+  font-family: var(--font-tomato);
+} */
+
+/* Standardized Typography Utility Classes */
+
+/* Headings */
+/* .heading-1 {
+  font-family: var(--font-sora);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+} */
+
+/* .heading-2 {
+  font-family: var(--font-sora);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+} */
+
+/* .heading-3 {
+  font-family: var(--font-sora);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3;
+} */
+
+/* .heading-4 {
+  font-family: var(--font-sora);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+} */
+
+/* Body text */
+/* .body-text {
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  line-height: 1.6;
+} */
+
+/* .body-text-large {
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  line-height: 1.6;
+} */
+/* 
+.body-text-small {
+  font-family: var(--font-poppins);
+  font-size: 14px;
+  line-height: 1.6;
+} */
+
+/* Legacy support (backward compatible) */
+/* .heading {
+  font-family: var(--font-sora);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.05;
+} */
+
+/* .subheading {
+  font-family: var(--font-sora);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+} */
+
+/* .paragraph,
+.text {
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  line-height: 1.6;
+} */
+
+/* Responsive typography */
+/* @media (min-width: 768px) {
+  .heading-1 {
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
+  .heading-2 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .heading-3 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-1 {
+    font-size: 60px;
+    line-height: 1.05;
+  }
+
+  .heading-2 {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+} */
+
+/* Legacy responsive support */
+/* @media (max-width: 640px) {
+  .heading {
+    font-size: 32px;
+  }
+  .subheading {
+    font-size: 18px;
+  }
+} */
+
+/* Arrow icon color matching */
+/* .head-section-arrow {
+  filter: brightness(0) saturate(100%) invert(33%) sepia(88%) saturate(1234%)
+    hue-rotate(150deg) brightness(94%) contrast(88%);
+  transition:
+    filter 0.2s,
+    transform 0.2s;
+}
+
+.group:hover .head-section-arrow {
+  filter: brightness(0) saturate(100%) invert(100%);
+} */
+
+/* Header arrow icon - always white to match text */
+/* .header-arrow-icon {
+  filter: brightness(0) saturate(100%) invert(100%);
+  transition: filter 0.2s;
+} */
+
+/* Card arrow icon - matches text color #11717a */
+/* .card-arrow-icon {
+  filter: brightness(0) saturate(100%) invert(33%) sepia(88%) saturate(1234%)
+    hue-rotate(150deg) brightness(94%) contrast(88%);
+  transition: filter 0.2s;
+}
+
+.group:hover .card-arrow-icon {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(95%) saturate(2000%)
+    hue-rotate(160deg) brightness(85%) contrast(95%);
+} */
+
+
+.input {
+  @apply w-full px-4 py-3 rounded-md border border-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1eade6]/50 text-sm sm:text-base;
+}
+
