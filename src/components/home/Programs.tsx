@@ -69,6 +69,7 @@ const EventCard = ({ program, index }: { program: Events; index: number }) => {
                 src={images[imageIndex]}
                 alt={`${program.title} ${imageIndex + 1}`}
                 fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover w-full h-full"
               />
             </motion.div>

@@ -56,7 +56,7 @@ const Footer = () => {
                 src="/logo.png"
                 alt="Csitan Chitwan logo"
                 width={90}
-                height={70}
+                height={90}
                 priority
                 className="mx-0"
               />

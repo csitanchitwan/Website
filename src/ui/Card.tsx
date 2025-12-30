@@ -23,7 +23,9 @@ export default function Card({ items }: CardProps) {
         >
           <div className="mb-4">
             <div className="w-20 h-20 sm:w-30 sm:h-30 relative rounded-full shadow-md transition-transform group-hover:scale-105 border-2 border-green-300">
-              <Image src={i.image} alt={i.name} fill sizes="120px" className="rounded-full object-cover" />
+              <Image src={i.image} alt={i.name} fill 
+              sizes="(max-width: 768px) 80px, (max-width: 1024px) 100px, 120px"
+              className="rounded-full object-cover" />
             </div>
           </div>
 
