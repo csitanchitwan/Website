@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import { events, type Events } from "@/src/data/events";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const formatBold = (s?: string) => {
   if (!s) return "";
@@ -106,6 +107,7 @@ const EventCard = ({ program, index }: { program: Events; index: number }) => {
 };
 
 export default function Programs() {
+  const router = useRouter();
   return (
     <section className="py-20 sm:py-28 bg-linear-to-br from-[#cf4446]/30 via-[#eef2ff] to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
@@ -140,7 +142,7 @@ export default function Programs() {
 
         {/* View all Events button */}
         <div className="mt-8 sm:mt-12 flex justify-center">
-          <button className="flex items-center gap-2 bg-[#1eade6] hover:bg-[#1eade6]/80 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-xl cursor-pointer font-semibold">
+          <button onClick={() => router.push("/events")} className="flex items-center gap-2 bg-[#1eade6] hover:bg-[#1eade6]/80 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-xl cursor-pointer font-semibold">
             View Other Events <ArrowRight size={18} />
           </button>
         </div>

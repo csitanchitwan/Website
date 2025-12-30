@@ -15,8 +15,8 @@ export default function TeamsPage() {
 
       <section id="teams" className="max-w-6xl mx-auto px-4 sm:px-6 xl:px-0 py-16 sm:py-20">
         <div className="text-center mb-10">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1b2c48]">Our <span className="text-[#cf4446]">Teams</span></h1>
-          <p className="text-[#1e7c85] mt-2 text-sm sm:text-base">Meet the people behind CSITAN</p>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1b2c48]">Meet Our <span className="text-[#cf4446]">Leadership Teams</span></h1>
+          <p className="text-[#1e7c85] mt-2 text-sm sm:text-base">Passionate leaders working together to empower CSIT students, <br />strengthen collaboration, and build the future <br />of Nepal’s tech community.</p>
         </div>
 
         {/* President */}

@@ -4,6 +4,8 @@ import Image from "next/image";
 import Card from "@/src/ui/Card";
 import { team } from "@/src/data/about";
 
+import AboutImage from "@/public/assets/AboutImage.jpg";
+
 const AboutPage = () => {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-800 antialiased">
@@ -37,7 +39,7 @@ const AboutPage = () => {
           </div>
           <div className="order-1 md:order-2">
               <Image
-                src={"/logo.png"}
+                src={AboutImage}
                 alt="CSITAN Chitwan"
                 width={600}
                 height={600}

@@ -1,5 +1,7 @@
-import { ArrowRight, Building2, CalendarClock, CalendarDays, Globe2, GraduationCap, Handshake, MapPinned, Sparkles, Users } from "lucide-react";
+"use client";
 
+import { ArrowRight, Building2, CalendarClock, MapPinned, Sparkles, Users } from "lucide-react";
+import { useRouter } from "next/navigation";
 const stats = [
   { icon: Users, title: "Connected Students", value: "1000+" },
   { icon: Building2, title: "College Involved", value: "60+" },
@@ -7,6 +9,8 @@ const stats = [
   { icon: CalendarClock, title: "Established", value: "2011 AD" },
 ]
 export default function HeroSection() {
+  const router = useRouter();
+
   return (
     <section className="relative w-full flex flex-col md:flex-row items-start md:items-center bg-[#060B1E]/90 overflow-hidden px-4 sm:px-6 lg:px-10 py-10 md:py-0">
       {/* Animated Gradient Orbs */}
@@ -32,11 +36,11 @@ export default function HeroSection() {
           </p>
 
           <div className="mt-6 sm:mt-8 flex gap-4 sm:gap-6">
-            <button className="flex items-center justify-center gap-2 bg-[#1eade6] hover:bg-[#1eade6]/80 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-xl cursor-pointer font-semibold">
+            <button onClick={() => router.push("/events")} className="flex items-center justify-center gap-2 bg-[#1eade6] hover:bg-[#1eade6]/80 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-xl cursor-pointer font-semibold">
               View Our Events <ArrowRight size={18} />
             </button>
 
-            <button className="border border-[#1eade6] text-[#1eade6] px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-[#1eade6]/10 cursor-pointer font-semibold">Become a Member </button>
+            <button onClick={() => router.push("/contact-us")} className="border border-[#1eade6] text-[#1eade6] px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-[#1eade6]/10 cursor-pointer font-semibold">Become a Member </button>
           </div>
 
           {/* Floating Stats */}
