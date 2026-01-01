@@ -87,7 +87,7 @@ export default function HeroSection() {
             {/* Floating Highlight Card */}
             <div className="col-span-2 mt-2 sm:mt-4 bg-[#1eade6]/40 border border-indigo-500/30 p-3 sm:p-4 rounded-2xl text-center">
               <p className="text-indigo-300 text-lg sm:text-xl">Next Event</p>
-              <p className="text-white text-xl sm:text-2xl font-extrabold mt-1 sm:mt-2">Comming Soon</p>
+              <p className="text-white text-xl sm:text-2xl font-extrabold mt-1 sm:mt-2">Coming Soon</p>
             </div>
           </div>
         </div>
