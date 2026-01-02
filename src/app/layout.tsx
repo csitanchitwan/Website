@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.csitanchitwan.org"),
+  metadataBase: new URL("https://chitwan.csitan.org.np"),
   title: {
     default: "CSITAN Chitwan",
     template: "%s | CSITAN Chitwan",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    url: "https://www.csitanchitwan.org",
+    url: "https://chitwan.csitan.org.np",
     title: "CSITAN Chitwan",
     description:
       "Discover upcoming events by CSIT Association of Nepal – Chitwan. Join workshops, seminars, and activities to empower CSIT students and boost tech skills.",
