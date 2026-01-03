@@ -10,7 +10,7 @@ export const team = [
     { id: "5", name: "Bibek Parajuli", post: "Joint Secretary", image: "/assets/team2082/Bibek.png" },
 
     { id: "6", name: "Bahas Raj Rijal", post: "Treasurer", image: "/assets/team2082/Bahas.png" },
-    { id: "7", name: "Sunil Subedi", post: "Joint Treasurer", image: "/assets/team2082/Sunil.png" },
+    { id: "7", name: "Sunil Subedi", post: "Joint Treasurer", image: "/assets/team2082/Sunil.jpg" },
 
     { id: "8", name: "Prashant Subedi", post: "Executive", image: "/assets/team2082/Prashant.jpg" },
     { id: "9", name: "Shishir Bhusal", post: "Executive", image: "/assets/team2082/Shishir.png" },
