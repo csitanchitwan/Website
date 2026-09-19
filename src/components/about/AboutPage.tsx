@@ -13,7 +13,7 @@ const AboutPage = () => {
       {/* Who We Are */}
       <section id="about" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div className="mb-1">
-          <span className="inline-block bg-[#1eade6]/40 text-[#cf4446] px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-3">
+          <span className="inline-block bg-[#1eade6]/10 text-[#1e7c85] px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide mb-3">
             WHO WE ARE
           </span>
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1b2c48] leading-tight font-sora">
@@ -21,7 +21,7 @@ const AboutPage = () => {
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
           <div className="order-2 md:order-1 text-sm sm:text-base md:text-lg">
             <p className="text-slate-600 leading-relaxed font-poppins mb-4">
               CSIT Association of Nepal (CSITAN) is a non-profit,
@@ -32,9 +32,14 @@ const AboutPage = () => {
               CSITAN is connected with more than 1000 students from over 60 colleges nationwide through five regional committees, working as a common platform between students, faculty members, and the IT industry.
 
             </p>
+            <p className="text-slate-600 leading-relaxed font-poppins mb-4">
+              CSITAN Chitwan represents the Chitwan regional committee and actively organizes workshops, seminars, student interaction programs and technical sessions that enhance knowledge sharing, collaboration and leadership among local CSIT students.
+            </p>
+            <p className="text-slate-600 leading-relaxed font-poppins mb-4">
+              Every year the committee brings students, teachers and industry professionals onto one stage through hands on sessions, coding events and career talks that turn classroom theory into practical, job ready skills.
+            </p>
             <p className="text-slate-600 leading-relaxed font-poppins">
-              CSITAN–Chitwan represents the Chitwan regional committee and actively organizes workshops, seminars, student interaction programs and technical sessions to enhance knowledge sharing, collaboration and leadership among local CSIT students.
-
+              Above all, we work to build a supportive community where juniors learn from seniors, ideas are shared openly, and every CSIT student finds the guidance, mentorship and opportunities needed to grow into a confident IT professional.
             </p>
           </div>
           <div className="order-1 md:order-2">
@@ -49,7 +54,7 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <div className="bg-linear-to-br from-[#9adbf5] to-[#e4afb0] rounded-xl p-5 sm:p-8 md:p-8 border border-[#C8E6C9] mt-14 sm:mt-20">
+        <div className="bg-linear-to-br from-[#1eade6]/10 to-white rounded-xl p-5 sm:p-8 md:p-8 border border-[#1eade6]/25 mt-14 sm:mt-20">
           <h3 className="text-xl sm:text-2xl font-bold text-[#1b2c48] mb-4 font-sora">
             Our Mission & Core Values
           </h3>

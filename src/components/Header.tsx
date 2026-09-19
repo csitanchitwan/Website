@@ -104,7 +104,15 @@ export default function Header() {
             <div className="flex items-center min-h-16 sm:min-h-18 justify-between">
                 <Link
                   href="/"
-                  className="flex items-center gap-3 cursor-pointer"
+                  aria-label="CSITAN Chitwan — go to home"
+                  onClick={(e) => {
+                    // If already on the home page, just smooth-scroll to the top.
+                    if (pathname === "/") {
+                      e.preventDefault();
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }
+                  }}
+                  className="flex items-center gap-3 cursor-pointer transition-transform hover:scale-[1.03] active:scale-95"
                 >
                   <Image
                     src="/logo.png"

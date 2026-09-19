@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import { Footer, Header } from "../components";
+import OfflineNotice from "../components/OfflineNotice";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -81,6 +82,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <OfflineNotice />
       </body>
     </html>
   );

@@ -8,7 +8,6 @@ import {
   FaInstagram,
   FaLinkedin,
   FaPhoneAlt,
-  FaTiktok,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -109,7 +108,6 @@ const Footer = () => {
                   icon: <FaLinkedin className="hover:text-blue-400" />,
                   href: "https://www.linkedin.com/in/csit-association-of-chitwan-b6664b273/",
                 },
-                { icon: <FaTiktok />, href: "https://www.tiktok.com" },
               ].map((item, index) => (
                 <Link
                   key={index}
@@ -128,7 +126,7 @@ const Footer = () => {
                       ? "Instagram"
                       : item.href.includes("linkedin")
                       ? "LinkedIn"
-                      : "TikTok"
+                      : "social media"
                   } page`}
                 >
                   {item.icon}
@@ -170,10 +168,10 @@ const Footer = () => {
               </h3>
               <ul className="space-y-2 text-gray-900 font-poppins">
                 {[
-                  { label: "Upcomming Event", href: "/event" },
-                  { label: "Past Event", href: "/event" },
-                  { label: "Hacathons", href: "/event" },
-                  { label: "Workshops", href: "/event" },
+                  { label: "Upcoming Events", href: "/events" },
+                  { label: "Past Events", href: "/events" },
+                  { label: "Hackathons", href: "/events" },
+                  { label: "Workshops", href: "/events" },
                 ].map((item, index) => (
                   <li key={index}>
                     <Link
@@ -190,9 +188,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center text-gray-400 mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-white/10 px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto text-center text-slate-500 mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-[#1eade6]/20 px-4 sm:px-6">
         <p className="text-xs sm:text-sm font-poppins">
-          &copy; {new Date().getFullYear()} CSITAN Chitwan. All Rights Reserved.
+          &copy; {new Date().getFullYear()} CSIT Association of Nepal (CSITAN) – Chitwan. All Rights Reserved.
         </p>
       </div>
     </footer>

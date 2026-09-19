@@ -9,12 +9,12 @@ export type about = {
 
 const About = () => {
   return (
-    <section className="py-20 sm:py-28 bg-linear-to-br from-[#f0f9ff] via-[#eef2ff] to-white relative overflow-hidden">
-      {/* Background Orbs */}
-      <div className="absolute -top-32 -right-20 w-72 h-72 sm:w-[350px] sm:h-[350px] bg-[#1eade6]/60 blur-[80px] sm:blur-[110px] rounded-full" />
-      <div className="absolute bottom-0 -left-20 w-72 h-72 sm:w-[350px] sm:h-[350px] bg-[#cf4446]/60 blur-[100px] sm:blur-[130px] rounded-full" />
+    <section className="py-14 sm:py-20 bg-linear-to-b from-white to-[#eefaff] relative overflow-hidden">
+      {/* Background glow — theme colours only, subtle */}
+      <div className="animate-blob absolute -top-32 -right-20 w-72 h-72 sm:w-[350px] sm:h-[350px] bg-[#1eade6]/25 blur-[100px] sm:blur-[130px] rounded-full" />
+      <div className="animate-blob-2 absolute bottom-0 -left-20 w-72 h-72 sm:w-[350px] sm:h-[350px] bg-[#cf4446]/20 blur-[110px] sm:blur-[140px] rounded-full" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-15 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center">
         {/* LEFT TEXT */}
         <div className="w-full">
           <span className="inline-block text-[#1eade6] text-sm sm:text-base font-semibold tracking-widest uppercase">
@@ -39,13 +39,15 @@ const About = () => {
           </p>
         </div>
 
-        {/* RIGHT IMAGE */}
+        {/* RIGHT IMAGE — height-capped so it stays balanced with the text column */}
         <div className="relative w-full flex justify-center md:justify-end">
-          <div className="relative w-full max-w-md sm:max-w-lg rounded-3xl overflow-hidden shadow-2xl border border-white/40 backdrop-blur-md">
+          <div className="relative w-full max-w-md h-64 sm:h-80 md:h-[420px] rounded-3xl overflow-hidden shadow-xl border border-white/40">
             <Image
               src={AboutImage}
               alt="CSITAN Chitwan Group"
-              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width: 768px) 100vw, 45vw"
+              className="object-cover object-top"
             />
 
             {/* Soft overlay gradient */}

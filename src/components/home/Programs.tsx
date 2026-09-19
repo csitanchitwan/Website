@@ -110,7 +110,7 @@ const EventCard = ({ program, index }: { program: Events; index: number }) => {
 export default function Programs() {
   const router = useRouter();
   return (
-    <section className="py-20 sm:py-28 bg-linear-to-br from-[#cf4446]/30 via-[#eef2ff] to-white">
+    <section className="py-20 sm:py-28 bg-linear-to-b from-[#eefaff] to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="text-center">
           <motion.h2
@@ -118,9 +118,9 @@ export default function Programs() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#cf4446] mb-2 sm:mb-4 font-sora"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1b2c48] mb-2 sm:mb-4 font-sora"
           >
-            Our Events
+            Our <span className="text-[#cf4446]">Events</span>
           </motion.h2>
 
           <motion.span
